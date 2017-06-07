@@ -1,0 +1,16 @@
+C:\Users\scottba\Documents\Visual Studio 2013\Projects\PublishResults\PublishResults\PublishResults\bin\Release\PublishResults.exe.config
+C:\Users\scottba\Documents\Visual Studio 2013\Projects\PublishResults\PublishResults\PublishResults\bin\Release\PublishResults.exe
+C:\Users\scottba\Documents\Visual Studio 2013\Projects\PublishResults\PublishResults\PublishResults\bin\Release\PublishResults.pdb
+C:\Users\scottba\Documents\Visual Studio 2013\Projects\PublishResults\PublishResults\PublishResults\bin\Release\MySql.Data.dll
+C:\Users\scottba\Documents\Visual Studio 2013\Projects\PublishResults\PublishResults\PublishResults\obj\Release\PublishResults.csprojResolveAssemblyReference.cache
+C:\Users\scottba\Documents\Visual Studio 2013\Projects\PublishResults\PublishResults\PublishResults\obj\Release\About.baml
+C:\Users\scottba\Documents\Visual Studio 2013\Projects\PublishResults\PublishResults\PublishResults\obj\Release\MainWindow.baml
+C:\Users\scottba\Documents\Visual Studio 2013\Projects\PublishResults\PublishResults\PublishResults\obj\Release\About.g.cs
+C:\Users\scottba\Documents\Visual Studio 2013\Projects\PublishResults\PublishResults\PublishResults\obj\Release\MainWindow.g.cs
+C:\Users\scottba\Documents\Visual Studio 2013\Projects\PublishResults\PublishResults\PublishResults\obj\Release\App.g.cs
+C:\Users\scottba\Documents\Visual Studio 2013\Projects\PublishResults\PublishResults\PublishResults\obj\Release\PublishResults_MarkupCompile.cache
+C:\Users\scottba\Documents\Visual Studio 2013\Projects\PublishResults\PublishResults\PublishResults\obj\Release\PublishResults.g.resources
+C:\Users\scottba\Documents\Visual Studio 2013\Projects\PublishResults\PublishResults\PublishResults\obj\Release\PublishResults.Properties.Resources.resources
+C:\Users\scottba\Documents\Visual Studio 2013\Projects\PublishResults\PublishResults\PublishResults\obj\Release\PublishResults.csproj.GenerateResource.Cache
+C:\Users\scottba\Documents\Visual Studio 2013\Projects\PublishResults\PublishResults\PublishResults\obj\Release\PublishResults.exe
+C:\Users\scottba\Documents\Visual Studio 2013\Projects\PublishResults\PublishResults\PublishResults\obj\Release\PublishResults.pdb

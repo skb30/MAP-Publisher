@@ -1,0 +1,13 @@
+﻿<Window x:Class="PublishResults.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="About" Height="325" Width="500" ResizeMode="NoResize">
+    <StackPanel>
+        <Label Grid.Row="1" Content="Mainframe Automation Project Results Publisher" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top" FontSize="20" Width="462" Height="37" />
+        <Image Width="128" Height="128" Source="pack://application:,,,/Assets/icon.png" Margin="20,5" />
+        <TextBlock Name="Version" Margin="20,5">Version 1.1 beta</TextBlock>
+        <TextBlock Name="Branch" Margin="20,5">Morgan Hill QA</TextBlock>
+        <TextBlock Name="Copyright" Margin="20,5">Copyright  © 2014 ASG Software Solutions. All rights reserved.</TextBlock>
+        
+    </StackPanel>
+</Window>

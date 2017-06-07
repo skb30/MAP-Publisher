@@ -1,0 +1,69 @@
+﻿<Window x:Class="PublishResults.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Mainframe Automation Project (MAP)" Height="550.522" Width="1055.97" ResizeMode="NoResize" Loaded="Window_Loaded" Icon="icon.ico">
+    <Grid x:Name="MainGrid" IsEnabled="False" Margin="0,0,-6,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="197" />
+            <RowDefinition Height="126"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid x:Name="OptionsGrid" Grid.Row="2" Grid.RowSpan="3" Height="385" VerticalAlignment="Top" Margin="0,10,10,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="130" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="1" Content="Database" HorizontalAlignment="Left" Margin="20,5,0,0" VerticalAlignment="Top" FontSize="16" Height="31" Width="76" />
+            <Label Grid.Row="2" Content="Product" HorizontalAlignment="Left" Margin="20,5,0,0" VerticalAlignment="Top" FontSize="16" Height="31" Width="65" />
+            <Label Grid.Row="4" Content="OS Version" HorizontalAlignment="Left" Margin="20,5,0,0" VerticalAlignment="Top" FontSize="16" Height="31" Width="88" />
+            <Label Grid.Row="5" Content="LPAR" HorizontalAlignment="Left" Margin="20,5,0,0" VerticalAlignment="Top" FontSize="16" Height="31" Width="46" />
+            <Label Grid.Row="6" Content="SubSystem" HorizontalAlignment="Left" Margin="20,5,0,0" VerticalAlignment="Top" FontSize="16" Height="31" Width="88" />
+            <Label Grid.Row="7" Content="Build Info" HorizontalAlignment="Left" Margin="20,5,0,0" VerticalAlignment="Top" FontSize="16" Height="31" Width="77" />
+            <Label Grid.Row="9" Content="Build Name" HorizontalAlignment="Left" Margin="20,11,0,-18" FontSize="16" Width="101" />
+            <Label Grid.Row="3" Content="Site" HorizontalAlignment="Left" Margin="20,5,0,0" VerticalAlignment="Top" FontSize="16" Height="31" Width="36" />
+
+
+            <ComboBox x:Name="ProductBox" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Width="210" Height="22"/>
+            <ComboBox x:Name="OsVersionBox" Grid.Column="1" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Width="120" Grid.Row="4" Height="22"/>
+            <ComboBox x:Name="LparBox" Grid.Column="1" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Width="120" Grid.Row="5" Height="22"/>
+            <ComboBox x:Name="SubsystemBox" Grid.Column="1" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Width="210" Grid.Row="6" Height="22"/>
+            <ComboBox x:Name="SiteBox" Grid.Column="1" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Width="120" Grid.Row="3" Height="22"/>
+            <Button x:Name="PathButton" Content="Set Path" HorizontalAlignment="Right" Margin="0,11,10,0" VerticalAlignment="Top" Width="92" Click="Path_Button_Clicked" Height="23"/>
+            <Label x:Name="Location" Content="suitelog.txt" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,-185,0" VerticalAlignment="Top" Width="489" Height="31"/>
+            <RadioButton x:Name="DB_TEST" Content="TEST" Grid.Column="1" HorizontalAlignment="Left" Margin="10,14,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.049,-0.829" Checked="DB_TEST_Checked" IsChecked="False" Grid.Row="1" Height="16" Width="60"/>
+            <RadioButton x:Name="DB_PROD" Content="PROD" Grid.Column="1" HorizontalAlignment="Left" Margin="176,14,0,6" Checked="DB_PROD_Checked" Grid.Row="1" Width="55"/>
+            <TextBox x:Name="BuildInfo" Grid.Column="1" HorizontalAlignment="Left" Height="26" Margin="0,10,0,0" Grid.Row="7" TextWrapping="Wrap" VerticalAlignment="Top" Width="253"/>
+            <TextBox x:Name="LogMessages" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" Height="264" Margin="263,41,-591,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="642" Grid.RowSpan="8" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Auto"/>
+            <TextBox x:Name="BuildName" HorizontalAlignment="Left" Height="26" Margin="0,11,0,-3" Grid.Row="8" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="253" Grid.Column="1"/>
+        </Grid>
+
+        <Menu IsMainMenu="True">
+            <MenuItem Header="_Help">
+                <MenuItem Header="_About" Click="OpenAbout">
+                </MenuItem>
+
+            </MenuItem>
+        </Menu>
+        <Label Grid.Column="0" Grid.Row="1" Content="MAP Results Publisher"  VerticalAlignment="Top" FontSize="20" Height="37" Margin="25,25,391,0" />
+        <Button x:Name="Submit" Grid.Row="4" Content="Submit" HorizontalAlignment="Left" Margin="310,70,0,0" VerticalAlignment="Top" Width="74" Click="Submit_Click" Height="22"/>
+        <ProgressBar x:Name="MainProgress" HorizontalAlignment="Left" Height="22" Margin="25,70,0,0" Grid.Row="4" VerticalAlignment="Top" Width="265" IsEnabled="False" IsIndeterminate="True"/>
+        <Button x:Name="Log" Content="View Log" HorizontalAlignment="Left" Margin="957,70,0,0" Grid.Row="4" VerticalAlignment="Top" Width="75" Height="22" Click="Log_Click"/>
+        <Button x:Name="Cancel" Content="Cancel" HorizontalAlignment="Left" Margin="404,70,0,0" Grid.Row="4" Width="74" Height="22" VerticalAlignment="Top" Click="Cancel_Click"/>
+
+    </Grid>
+</Window>
